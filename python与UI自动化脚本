@@ -1,0 +1,263 @@
+# 这是一个注释
+# print("hello world")
+# """
+# 你好啊
+# """
+
+# print(2+3+6+98)
+# print("a"*5)
+# print(2+3*5)
+# print((2+3)*5)
+
+# name="妲己"
+# age= 18
+# print(name)
+# print(age)
+
+# name="妲己"
+# age=25
+# sex="女"
+# print("我叫{0},性别{1},今年{2}岁".format(name,sex,age))
+
+# a=8.5
+# b=7.5
+# price=(a*b)
+# print(price)
+
+# a=12
+# b=3
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b) # 取余数
+# print(a//b) # 取整数
+# print(a**b) # a的b次方
+
+# a=10
+# b=20
+# a,b=b,a
+# print(a)
+# print(b)
+# import keyword
+# from operator import truediv
+# print(keyword.kwlist)
+
+# name = "小明"
+# age = 18
+# sex = "男"
+# height = 1.75
+# is_student = true
+
+
+# i = 10
+# f = 10.5
+# b = True
+# print( i * f )
+# print( f + b )
+# print( i * b )
+# print( f // b )
+# print( f % b )
+
+# first_name = "张"
+# last_name = "三"
+# name = first_name + last_name
+# print(name)
+
+# str1 = "张"
+# str2 = str1 * 5
+# print(str2)
+
+# a = "123"
+# b = 456
+# c= str(b)
+# print(a + c)
+# d= int(a)
+# print(d + b)
+
+# a = 41
+# b = 6
+# print(a / b)
+
+# a = input("我叫：")
+# b = input("今年多大：")
+# print("我叫{0},今年{1}".format(a,b)) 
+
+# a = input("公司名称：")
+# name= input("姓名：")
+# tel= input("电话：")
+# hah= input("邮箱：")
+# c= "*"*10
+# print("%s\n%s\n%s\n%s\n%s\n" %(a,name,tel,hah,c))
+
+# name = "小明"
+# print("我的名字叫{0}，请多多关照".format(name))
+# num=1
+# print("我的学号是%06d" %(num))
+# price=8.5
+# weight= 5
+# p= price * weight
+# print("%.2f"%p)
+# scale= 10.01 
+# print("%.2f%%" %scale)
+
+
+# print("hello world")
+# print("hello python")
+# print("********")
+# print("hello world ",end="123123")
+# print("hello\n python")
+
+
+# UI自动化
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# from selenium import webdriver
+# import random
+#创建浏览器对象
+# driver=webdriver.Chrome()
+# #获取指定页面
+# url="https://www.baidu.com"
+# driver.get(url)
+
+# class_name定位元素
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# driver.get(url)
+# driver.find_element(By.CLASS_NAME , "title-content-title").click()
+# time.sleep(10)
+# driver.quit()
+
+# xpath路径定位元素
+# import time
+# from selenium import webdriver
+# driver=webdriver.Chrome()
+# url="http://learn.antcave.club/#/"
+# driver.get(url)
+# driver.find_element("name","keywords").send_keys("python")
+# time.sleep(10)
+# driver.find_element("xpath","/html/body/div/div[1]/div/nav/div/div/div[2]/div/div/button").click()
+# time.sleep(20)
+
+
+# CSS里用id定位：#ID
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# print(driver.get(url))
+# time.sleep(3)
+# driver.find_element(By.PARTIAL_LINK_TEXT , "登录").click()
+# time.sleep(3)
+# driver.find_element(By.CSS_SELECTOR , "#TANGRAM__PSP_11__userName").send_keys("13546465211")
+# time.sleep(10)
+# driver.quit()
+
+# 使用属性和逻辑来查找元素
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# print(driver.get(url))
+# time.sleep(3)
+# driver.find_element(By.PARTIAL_LINK_TEXT , "登录").click()
+# time.sleep(3)
+# driver.find_element(By.XPATH , "//input[@type='text' and @name='username']").send_keys("13546465211")
+# time.sleep(10)
+# driver.quit()
+
+
+# CSS里用class定位
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# print(driver.get(url))
+# time.sleep(3)
+# driver.find_element(By.PARTIAL_LINK_TEXT , "登录").click()
+# time.sleep(3)
+# driver.find_element(By.CSS_SELECTOR , "[class='pass-text-input pass-text-input-userName']").send_keys("13546465211")
+# time.sleep(10)
+# driver.quit()
+
+
+
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# print(driver.get(url))
+# time.sleep(3)
+# driver.find_element(By.PARTIAL_LINK_TEXT , "登录").click()
+# time.sleep(3)
+# driver.find_element(By.CSS_SELECTOR , "#TANGRAM__PSP_11__userNameWrapper>#TANGRAM__PSP_11__userName").send_keys("13546465211")
+# time.sleep(10)
+# driver.quit()
+
+
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# url="https://www.baidu.com"
+# print(driver.get(url))
+# time.sleep(3)
+# driver.find_element(By.ID , "kw").send_keys("企查查")
+# time.sleep(3)
+# driver.find_element(By.ID , "su").click()
+# time.sleep(3)
+# driver.find_element(By.XPATH , "/html/body/div[2]/div[3]/div/div/div/div[2]/div/div/div/div[2]/a").click()
+# time.sleep(3)
+# windows_handles=driver.window_handles  # 获取所有句柄
+# print(windows_handles)
+# driver.switch_to.window(windows_handles[-1])   # 切换到最后一个句柄
+# time.sleep(5)
+# driver.find_element(By.ID , "searchKey").click()
+# time.sleep(3)
+# driver.find_element(By.XPATH , "/html/body/div/div[2]/section[1]/div/div/div/div[1]/div/div/input").send_keys("百度")
+# time.sleep(3)
+# driver.find_element(By.CLASS_NAME , "input-group-btn").click()
+# time.sleep(3)
+
+
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# driver=webdriver.Chrome()
+# driver.get("https://www.baidu.com")
+# driver.implicitly_wait(20)
+# driver.find_element(By.ID , "kw").send_keys("LOL")
+# driver.implicitly_wait(20)
+# driver.find_element(By.ID , "su").click()
+# driver.implicitly_wait(20)
+# driver.find_element(By.XPATH , "/html/body/div[2]/div[4]/div[1]/div[3]/div[1]/div/div[1]/h3/a[1]").click()
+# driver.implicitly_wait(20)
+# driver.switch_to.window(driver.window_handles[0])
+# driver.find_element(By.ID , "kw").clear()
+# driver.implicitly_wait(20)
+# driver.find_element(By.ID , "kw").send_keys("abcd")
+# driver.implicitly_wait(20)
+# driver.find_element(By.ID , "su").click()
+# newwindow = 'window.open("https://www.bilibili.com")'
+# driver.execute_script(newwindow)     # 创建一个新的窗口
+# driver.maximize_window()   #  最大化窗口
+# driver.set_window_size(200,200)  # 设置浏览器窗口大小宽高
+# driver.set_window_position(200,200)   # 设置浏览器窗口位置，在桌面的位置
+# driver.implicitly_wait(20)   # 隐式等待时间
+# driver.back()  # 后退
+# driver.forward()  # 前进
+# driver.refresh()  # 刷新
+# driver.close()  #  关闭当前窗口
+# driver.quit()  # 关闭
+# print(driver.title)  # 打印标题
+# print(driver.current_url)   # 打印当前URL
+
+
